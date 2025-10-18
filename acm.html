@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - Mayank</title>
+    <title>CSS Card Design</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .card {
+            background-color: white;
+            height: 444px;
+            width: 300px;
+            border-radius: 7px;
+
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
+            background-color: gray;
+            padding: 45px;
+        }
+
+        .content {
+            padding: 3px;
+        }
+
+        .content p {
+            font-size: 18px;
+            padding: 3px;
+            color: gray;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+
+        .image {
+            padding: 7px;
+            padding-left: 10px;
+        }
+
+        .image img {
+            border-radius: 7px;
+            margin: 0px auto;
+        }
+
+        .capsules span {
+            border: 1px solid gray;
+            padding: 1px 2px;
+            border-radius: 7px;
+            font-size: 15px;
+             margin-right: 10px;
+             margin-left: 15px;
+             font-weight: 500;
+             font-family:  Tahoma, sans-serif ;
+        }
+
+        .capsules {
+            padding: 0 34px 0 44px;
+        }
+        .button{
             text-align: center;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-        }
-        main {
-            padding: 30px 20px;
-        }
-        h1, h2 {
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: square;
-            display: inline-block;
-            text-align: left;
-            padding-left: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        footer {
-            margin-top: 30px;
-            padding: 15px 0;
-            background-color: #ddd;
+        .button button{
+            padding: 7px 9px;
+            background-color: rgb(198, 218, 230);
+            border-radius: 15px;
+            color: rgb(110, 110, 237);
+            font-size: 14px;
+            margin-top: 7px;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Hello! I'm Mayank</h1>
-    </header>
-    <main>
-        <h2>My Interests</h2>
-        <ul>
-            <li>Data Science</li>
-            <li>Machine Learning</li>
-            <li>Listening to Music</li>
-            <li>Watching Football</li>
-            <li>Playing Football</li>
-        </ul>
-    </main>
-    <footer>
-        &copy; 2025 Mayank
-    </footer>
+    <div class="card">
+        <div class="image">
+            <img width=250px src="steve-saunders-pOOoFEVn6c0-unsplash.jpg" alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h1>Mayank</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia earum, fuga laborum cum excepturi repellat
+                omnis ex, fugit, error incidunt deleniti asperiores corrupti!</p>
+
+        </div>
+        <div class="button">
+            <button >Read More</button>
+
+        </div>
+
+
+    </div>
 </body>
+
 </html>
